@@ -1,5 +1,5 @@
 {
-  "extends": "plasmo/templates/tsconfig.base",
+
   "exclude": [
     "node_modules"
   ],
@@ -7,13 +7,20 @@
     ".plasmo/index.d.ts",
     "./**/*.ts",
     "./**/*.tsx"
-  ],
+, "app/helpers/overlays.js", "webpack.config.js", "app/helpers/fakeCursor.js"  ],
   "compilerOptions": {
+"moduleResolution": "NodeNext",
+    "module": "NodeNext",
     "paths": {
       "~*": [
         "./*"
       ]
     },
-    "baseUrl": "."
+     "typeRoots": ["./node_modules/@types", "./types"],
+    "baseUrl": ".",
+     "esModuleInterop": true,
+    "jsx": "react",
+     "lib": ["es2021", "dom"]
+   
   }
 }

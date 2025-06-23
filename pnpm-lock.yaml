@@ -5,6 +5,15 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@givefreely/adunit':
+    specifier: ^1.5.1
+    version: 1.5.1
+  '@plasmohq/storage':
+    specifier: ^1.15.0
+    version: 1.15.0(react@18.2.0)
+  background:
+    specifier: link:@givefreely/adunit/background
+    version: link:@givefreely/adunit/background
   plasmo:
     specifier: 0.90.5
     version: 0.90.5(@types/node@20.11.5)(react-dom@18.2.0)(react@18.2.0)
@@ -394,6 +403,10 @@ packages:
     engines: {node: '>=12'}
     dependencies:
       cross-spawn: 7.0.6
+    dev: false
+
+  /@givefreely/adunit@1.5.1:
+    resolution: {integrity: sha512-cBExBA3Z8Y2GXYy9u8b3TLkiy9a+VKLPIWji+4Yot+UEpIqr9KEkd4P9+mgVEAKNBbuO13fkTAUH6Grki6G8Xg==}
     dev: false
 
   /@ianvs/prettier-plugin-sort-imports@4.1.1(prettier@3.2.4):
@@ -2582,6 +2595,18 @@ packages:
       - velocityjs
       - walrus
       - whiskers
+    dev: false
+
+  /@plasmohq/storage@1.15.0(react@18.2.0):
+    resolution: {integrity: sha512-zBZ2NyVyvZlql2XHsjkZDL0+bqF6lir9RygeTnkYGF253M8DZttuSvjpsmpK6OWYmRXjhEqJeubd3+Zq9kuZ0w==}
+    peerDependencies:
+      react: ^16.8.6 || ^17 || ^18 || ^19.0.0
+    peerDependenciesMeta:
+      react:
+        optional: true
+    dependencies:
+      pify: 6.1.0
+      react: 18.2.0
     dev: false
 
   /@pnpm/config.env-replace@1.1.0:
@@ -4898,6 +4923,11 @@ packages:
     requiresBuild: true
     dev: false
     optional: true
+
+  /pify@6.1.0:
+    resolution: {integrity: sha512-KocF8ve28eFjjuBKKGvzOBGzG8ew2OqOOSxTTZhirkzH7h3BI1vyzqlR0qbfcDBve1Yzo3FVlWUAtCRrbVN8Fw==}
+    engines: {node: '>=14.16'}
+    dev: false
 
   /pirates@4.0.7:
     resolution: {integrity: sha512-TfySrs/5nm8fQJDcBDuUng3VOUKsd7S+zqvbOTiGXHfxX4wK31ard+hoNuvkicM/2YFzlpDgABOevKSsB4G/FA==}
